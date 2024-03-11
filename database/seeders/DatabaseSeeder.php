@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
 
         User::find(1) -> update([
             'name' => 'Juan',
-            'email' => 'juan@juan.com'
+            'email' => 'juan@juan.com',
+            'password' => bcrypt('password')
         ]);
     }
 }
